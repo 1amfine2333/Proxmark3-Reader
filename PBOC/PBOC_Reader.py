@@ -23,7 +23,7 @@ os.system("clear")
 pm3 = subprocess.Popen("/home/satan/Program/proxmark3-iceman/client/proxmark3 /dev/ttyACM0", shell=True, stdout=subprocess.PIPE,stdin=subprocess.PIPE,stderr=subprocess.PIPE)
 # 选择支付系统PSE-1PAY.SYS.DDF01,并建立连接
 pm3.stdin.write('hf 14a raw -c -s -p 0200A404000E315041592E5359532E4444463031\n')
-#pm3.stdin.write('hf 14a raw -c 0200A4040008A000000333010101 -p\n')
+# 借记卡最后一位为1贷记卡为2
 pm3.stdin.write('hf 14a raw -c 0300A4040008A000000333010101 -p\n')
 # 发送银行卡信息查询命令
 pm3.stdin.write('hf 14a raw -c 0200B2010C -p\n')
