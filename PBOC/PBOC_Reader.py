@@ -54,10 +54,10 @@ if len(idnumber) >= 90:
     print u'卡主身份证：' + binascii.a2b_hex(idnumber[12:48]).decode('gbk')
 print u'银行卡卡号：' + cardnumber
 print u'银行卡类型：' + getCardType(cardnumber)
-# print u'身份证号码：' + idnumber
 print '----------------------------------------------------------------------------------------'
 print u'编号	交易时间			交易金额		交易地点'
 for i in range(len(history)):
     print '----------------------------------------------------------------------------------------'
     print getHistory(history[i],i+1)
-#3os.system("rm proxmark3.log")
+# 删除proxmark3的运行日志
+os.system("rm proxmark3.log")
