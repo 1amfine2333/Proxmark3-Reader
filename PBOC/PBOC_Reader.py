@@ -19,7 +19,7 @@ def getHistory(historystr,number):
         return ''
 
 os.system("clear")
-# 启动Proxmark3,此处自行设置proxmark3客户端所在的目录以及设备名
+# 启动Proxmark3,此处自行设置proxmark3客户端所在的路径以及设备名
 pm3 = subprocess.Popen("/home/satan/Program/proxmark3-iceman/client/proxmark3 /dev/ttyACM0", shell=True, stdout=subprocess.PIPE,stdin=subprocess.PIPE,stderr=subprocess.PIPE)
 # 选择支付系统PSE-1PAY.SYS.DDF01,并建立连接
 pm3.stdin.write('hf 14a raw -c -s -p 0200A404000E315041592E5359532E4444463031\n')
