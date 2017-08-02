@@ -61,3 +61,5 @@ for i in range(len(history)):
     print getHistory(history[i],i+1)
 # 删除proxmark3的运行日志
 os.system("rm proxmark3.log")
+# 删除proxmark3的历史记录
+os.system("rm .history")
