@@ -6,4 +6,4 @@
 ## PBOC
 PBOC目录下的主程序为PBOC_Reader.py，该程序可以读取带有银联标志的所有闪付卡的信息和交易记录，目前可读取借记卡。
 ## TravelCard
-TravelCard目录下的主程序为TravelCard_Reader.py，改程序用于读取交通卡的余额以及交易记录，目前之测试了上海的卡，其他城市如有需要可issue提交。
+TravelCard目录下的主程序为TravelCard_Reader.py，该程序用于读取交通卡的余额以及交易记录，目前只测试了上海的卡，其他城市如有需要可issue提交。
